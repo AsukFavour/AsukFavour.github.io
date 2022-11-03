@@ -594,6 +594,41 @@ footer a:hover{
     }
 }
 
+/* shop page start */
+
+#page-header{
+    background-image: url('img/banner/b1.jpg');
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    padding: 15px;
+
+}
+
+#page-header h2,p{
+    color: white;
+}
+
+#pagenation{
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#pagenation a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+}
+/* short page ends */
+
 @media (max-width:480px) {
     #header {
         padding: 10px 27px;
