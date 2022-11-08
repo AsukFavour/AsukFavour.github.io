@@ -450,6 +450,7 @@ footer h4{
 footer p{
     font-size: 15px;
     margin: 0 0 8px 0;
+    color: #465b52;
 }
 
 footer a{
@@ -610,7 +611,10 @@ footer a:hover{
 
 }
 
-#page-header h2,p{
+#page-header h2{
+    color: white;
+}
+#page-header p{
     color: white;
 }
 
@@ -626,8 +630,128 @@ footer a:hover{
     padding: 15px 20px;
     border-radius: 4px;
     color: white;
+    font-weight: 600;
 }
-/* short page ends */
+
+#pagenation a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* shop page ends */
+
+/* product page */
+#prodetials{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetials .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetials .single-prodetials{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetials .single-prodetials h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetials .single-prodetials h2{
+    font-size: 26px;
+}
+
+#prodetials .single-prodetials select{
+    padding: 5px  10px ;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#prodetials .single-prodetials input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetials .single-prodetials input:focus{
+    outline: none;
+}
+
+#prodetials .single-prodetials button{
+    background-color: #088178;
+    color: white;
+}
+
+#prodetials .single-prodetials span{
+    line-height: 25px;
+}
+
+/* about page */
+#about-header{
+    background-image: url('img/about/banner.png');
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    padding: 15px;
+    
+}
+
+
+
+#about-header h2{
+    color: white;
+}
+
+#about-header p{
+    color: white;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+     
+}
+
+#about-head div{
+    padding-left: 40px;
+     
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 80%;
+    height: auto;
+    align-items: center;
+    border-radius: 8px;
+}
+
 
 @media (max-width:480px) {
     #header {
@@ -684,5 +808,39 @@ footer a:hover{
 
     #banner-3 .banner-box {
         width: 100%;
+    }
+
+    /* single product */
+    #prodetials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetials .single-pro-image {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    #prodetials .single-prodetials {
+        width: 100%;
+       
+    }
+
+    #about-head {
+        flex-direction: column;
+        
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div h2{
+        text-align: center;
+    }
+
+    #about-head div {
+        padding-left: 0;
     }
 }
