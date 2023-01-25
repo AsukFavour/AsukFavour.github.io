@@ -36,7 +36,36 @@ smallImg.forEach(
     }
 )
 
-// smallImg[0].onclick =() => bigImg.src = smallImg[0].src;
-// smallImg[1].onclick =() => bigImg.src = smallImg[1].src;
-// smallImg[2].onclick =() => bigImg.src = smallImg[2].src;
-// smallImg[3].onclick =() => bigImg.src = smallImg[3].src;
+// add tgo cart
+const addCart = [];
+const product = document.getElementById("productsId");
+const cartIcon = document.getElementsByClassName('buttons');
+const selectElement = document.querySelector('#select1');
+const amount =document.getElementById('size');
+const names = document.getElementById("name");
+const price = document.getElementById("price");
+const containerItem = document.querySelector('items')
+
+
+const carty= Array.from(cartIcon)
+console.log(amount);
+
+carty.forEach(
+    
+    (cart,i) => {
+        cart.addEventListener('click', (a)=>{
+            a.preventDefault;
+            addCart.push({name: names.innerText,
+                          amount: amount.value,
+                          selectElement: selectElement.value,
+                         price : price.innerText,
+                        bigImg : bigImg.src});
+
+            console.log( addCart)
+
+        })
+ 
+}
+)
+
+items.innerH
